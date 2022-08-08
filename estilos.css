@@ -60,7 +60,10 @@ a{
     justify-content: flex-end;
     padding: 10px;
     border-bottom: 3px dotted #eee;
+    
+  
 }
+
 .nav a{
     padding: 10px;
     color: #514f4f
@@ -70,7 +73,6 @@ a{
     color: #2d2d2d;
     border-bottom: 1px solid #2d2d2d;
 }
-
 
 /* --------main------------ */
 
@@ -96,12 +98,12 @@ a{
     flex-direction: column;
     padding: 10px;
     gap: 10px;
-    background-color: #f19b9b;
+    background: linear-gradient(#f19b9b, #875d5d);
     border-radius: 30px;
 }
 
 .nosotros{
-    background-color: #f19b9b;
+    background: linear-gradient(#f19b9b, #875d5d);
     border-radius: 30px;
 }
 /* -----------Footer--------------- */
@@ -160,6 +162,13 @@ a{
     border-radius: 20px;
 }
 
+.img_prod:hover{
+    width: 320px;
+    height: 320px;
+    transition: all .5s;
+    position: relative;
+}
+
 .price{
     color: #2d2b2b;
 }
@@ -193,7 +202,9 @@ a{
 .form_container textarea{
     padding: 10px;
 }
-
+.form p{
+    color: #fff;
+}
 .btn_form{
     color: white;
     background-color: #aba963;
@@ -206,6 +217,13 @@ a{
     background-color: #857c7c;
 }
 
+textarea{
+    width: 100%;
+}
+
+textarea:focus{
+    background: linear-gradient(#b5afaf, #fff);
+}
 
 /*------------ Responsive------------ */
 
@@ -223,6 +241,9 @@ a{
         .header{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .header_logo{
+            transform: translate(150px)
         }
         .nav{
             display: flex;
